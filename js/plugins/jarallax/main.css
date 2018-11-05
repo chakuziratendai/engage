@@ -1,0 +1,90 @@
+
+
+.container{
+background: transparent;
+margin:0 auto;
+}
+
+.cloud1, .cloud2, .cloud3, .cloud4{
+position:fixed;
+width:2000px;
+margin-left:-1000px;
+left:50%;
+
+z-index:-1;
+}
+
+.cloud1{
+height:692px;
+background:url(images/cloud1.png);
+margin-top:-346px;
+top:100%;
+}
+
+.cloud2{
+height:484px;
+background:url(images/cloud2.png);
+margin-top:-242px;
+top:90%;
+}
+
+.cloud3{
+height:444px;
+background:url(images/cloud3.png);
+margin-top:-222px;
+top:70%;
+}
+
+.cloud4{
+height:285px;
+background:url(images/cloud4.png);
+margin-top:-142px;
+top:55%;
+}
+
+.dark{
+position:fixed;
+width:100%;
+height:100%;
+top:100%;
+background:rgba(0,0,0,0.5);
+z-index:-2;
+}
+
+
+/* Required for full background image */
+
+html,
+body,
+header,
+.jarallax {
+  height: 100vh;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .jarallax {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse {
+  background-color: #82b1ff !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #82b1ff !important;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #82b1ff !important;
+  }
+}
