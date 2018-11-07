@@ -53,6 +53,7 @@ body {
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
 }
 
 .rgba-black-light,
@@ -115,7 +116,190 @@ body {
     height: 100%;
     background-color: rgba(0,0,0,0.4);
     z-index: 1;
-}     
+} 
 
+.owl-next, .owl-prev {
+    position: absolute!important;
+    top: 29%!important;
+    display: block !important;
+}    
 
+.owl-prev {     
+    left: -3.2%!important;    
+}
 
+.owl-next {    
+    right: -3.2%!important;    
+}
+.owl-prev i, .owl-next i {
+    color: rgba(36,36,36,1)!important;
+    font-size: 35px!important;
+}
+
+.owl-prev i:hover, .owl-next i:hover {
+    color: rgba(36,36,36,0.8)!important;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent!important;
+    
+}
+
+.section {
+    padding: 4%;
+  }
+
+#tracks-nav h6{
+    text-align: center;    
+    margin-bottom: 0;
+    z-index: 10;    
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+    position: relative;    
+    font-weight: 900;
+    font-size: 12px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}  
+
+#sessions-tracks .nav-tabs{
+    border-bottom: none!important ;
+}
+
+.track {
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 100%;
+    padding: 22.5% 0%;
+}
+
+.track:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.5%;
+    width: 101%;
+    height: 101%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;    
+    border-radius: 10px;
+}
+
+.track:hover:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -0.8%;
+    width: 101%;
+    height: 101%;    
+    z-index: 1;
+    border: none;
+    border-radius: 10px;
+}
+
+.track:hover h6{
+    color: rgba(43,43,43,0.9)!important;    
+} 
+
+.track1:after{
+    border: 4px solid #C2EFFF;
+}
+
+.track1:hover:after {
+    background-color: rgba(194,239,255,0.85);
+}
+
+.track1 h6{
+    color: #C2EFFF;
+}
+
+.track2:after{
+    border: 4px solid #FFE118;
+}
+
+.track2:hover:after { 
+    background-color: rgba(255,255,24,0.85);
+}
+
+.track2 h6{
+    color: #FFE118!important;
+}
+
+.track3:after{
+    border: 4px solid #C0C0C0;
+}
+
+.track3:hover:after { 
+    background-color: rgba(192,192,192,0.85);
+}
+
+.track3 h6{
+    color: #E1E1E1!important;
+}
+
+.track4:after{
+    border: 4px solid #B8CCE4;
+}
+
+.track4:hover:after { 
+    background-color: rgba(184,204,228,0.85);
+}
+
+.track4 h6{
+    color: #B8CCE4!important;
+}
+
+.track5:after{
+    border: 4px solid #FFEB9C;
+}
+
+.track5:hover:after { 
+    background-color: rgba(235,235,136,0.85);
+}
+
+.track5 h6{
+    color: #FFEB9C!important;
+}
+
+.track6:after{
+    border: 4px solid #FFC1FD;
+}
+
+.track6:hover:after { 
+    background-color: rgba(235,193,253,0.85);
+}
+
+.track6 h6{
+    color: #FFC1FD!important;
+}
+
+.track7:after{
+    border: 4px solid #C2EFFF;
+}
+
+.track7:hover:after { 
+    background-color: rgba(194,239,255,0.85);
+}
+
+.track7 h6{
+    color: #C2EFFF!important;
+}
+
+.track8:after{
+    border: 4px solid #FBC97F;
+}
+
+.track8:hover:after { 
+    background-color: rgba(251,201,127,0.85);
+}
+
+.track8 h6{
+    color: #FBC97F!important;
+}
+
+.owl-stage {
+    display: flex;
+  }
