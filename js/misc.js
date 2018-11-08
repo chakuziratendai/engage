@@ -11,6 +11,7 @@ if ($(".navbar").offset().top > 50) {
 }   
 });
 
+
 /* call owl carousel for tracks nav */
 $(document).ready(function() {
              var owl = $('#tracks-nav');
@@ -32,5 +33,7 @@ $(document).ready(function() {
                   }
                 }
               })
-            })
+            });
+
+
           
