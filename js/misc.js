@@ -35,5 +35,9 @@ $(document).ready(function() {
               })
             });
 
+/* remove active class on tracks nav */
 
-          
+$( '#tracks-nav li' ).on( 'click', function () {
+  $( '#tracks-nav' ).find( 'li.active' ).removeClass( 'active' );
+  $( this ).parent( 'li' ).addClass( 'active' );
+});
