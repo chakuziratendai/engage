@@ -41,3 +41,17 @@ $( '#tracks-nav li' ).on( 'click', function () {
   $( '#tracks-nav' ).find( 'li.active' ).removeClass( 'active' );
   $( this ).parent( 'li' ).addClass( 'active' );
 });
+
+/* add active class to active session */
+ $('.session-content').click(function () {
+   $( this ).parent().toggleClass( 'active-session' );
+ });
+
+ /* scroll to tracks nav top */
+ $("#track1-tab").click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#raised').offset('25%').top
+    }, 2000);
+});
+
+
