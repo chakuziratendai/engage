@@ -35,6 +35,31 @@ $(document).ready(function() {
               })
             });
 
+/* call owl carousel for sponsor logos */
+$(document).ready(function() {
+             var owl = $('#sponsors');
+              owl.owlCarousel({
+                margin: 10,
+                nav: false,
+                loop: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout:5000,
+                autoplayHoverPause:false,
+                responsive: {
+                  0: {
+                    items: 1
+                  },
+                  600: {
+                    items: 3
+                  },
+                  1000: {
+                    items: 7
+                  }
+                }
+              })
+            });
+
 /* remove active class on tracks nav */
 
 $( '#tracks-nav li' ).on( 'click', function () {
@@ -47,11 +72,5 @@ $( '#tracks-nav li' ).on( 'click', function () {
    $( this ).parent().toggleClass( 'active-session' );
  });
 
- /* scroll to tracks nav top */
- $("#track1-tab").click(function() {
-    $([document.documentElement, document.body]).animate({
-        scrollTop: $('#raised').offset('25%').top
-    }, 2000);
-});
 
 
